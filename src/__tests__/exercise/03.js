@@ -9,8 +9,6 @@ import userEvent from '@testing-library/user-event'
 
 test('counter increments and decrements when the buttons are clicked', () => {
   render(<Counter />)
-  // 🐨 replace these with screen queries
-  // 💰 you can use `getByText` for each of these (`getByRole` can work for the button too)
   const decrement = screen.getByRole("button", {name: /decrement/i})
   const increment = screen.getByRole("button", {name: /increment/i})
   const message = screen.getByText(/current count/i)
